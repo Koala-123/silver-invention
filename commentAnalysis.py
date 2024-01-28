@@ -13,7 +13,7 @@ API_KEY = 'AIzaSyDIdrPdFFWtnnd1e8sMY2Kf5GrzVa2LEYk'
 
 youtube=build('youtube','v3',developerKey=API_KEY)
 
-video_id=input('Enter YouTuble video URL: ')[-11:]
+video_id=input('Enter YouTube video URL: ')[-11:]
 print("video_id: "+video_id)
 
 video_response=youtube.videos().list(
